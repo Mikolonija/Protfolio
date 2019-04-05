@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Web video body */
+
+#main {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* video body */
+
+.color_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(black, black, black);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+
+/* voise icons style */
+
+.fa-volume-up {
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* audio postion and style */
+
+.audio {
+    background-image: linear-gradient(white, black, white);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 200px;
+}
+
+
+/* text-top postion*/
+
+.text-top {
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+
+
+/* text top style */
+
+.text {
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif;
+    /*    background: linear-gradient(white, black);*/
+    color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+}
+
+
+/*all card postion */
+
+ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* card style and space between card */
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 140px;
+    height: 140px;
+    margin: 0 80px;
+    border-radius: 12px;
+}
+
+
+/* the hide card style and icons*/
+
+ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px !important;
+    border-radius: 12px;
+}
+
+
+/* the hide card tranform  */
+
+ul li :hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+ul li :hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+ul li :hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+ul li :hover span:nth-child(1) {
+    transform: translate(0, 0);
+    opacity: 0.2;
+}
+
+ul li:nth-child(1) span {
+    background-image: linear-gradient(black, #4EF89B, black);
+}
+
+ul li:nth-child(2) span {
+    background-image: linear-gradient(black, #24292e, black);
+}
+
+ul li:nth-child(3) span {
+    background-image: linear-gradient(black, #3b5998, black);
+}
+
+
+/* text-butoom style */
+
+.text-butoom {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+
+/* text-booto style */
+
+.about_text {
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/* letter style */
+
+.letter {
+    letter-spacing: 15px;
+    color: rgb(187, 173, 173);
+    opacity: 0.2;
+    font-size: 50px;
+    -webkit-transition: padding .1s;
+    transition: all 2s;
+}
+
+
+/* leters changers then hover style and size*/
+
+.text-butoom:hover .letter2 {
+    font-size: 4em;
+    background: linear-gradient(black, #4EF89B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #4EF89B;
+    font-weight: 600;
+    opacity: 1 !important;
+}
+
+.text-butoom:hover .letter3 {
+    font-size: 3.5em;
+    opacity: 1 !important;
+    background: linear-gradient(black, #24292e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #24292e;
+    font-weight: 600;
+}
+
+.text-butoom:hover .letter4 {
+    opacity: 1 !important;
+    font-size: 3em;
+    font-weight: 600;
+    background: linear-gradient(black, #3b5998);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #3b5998;
+}
+
+.text-butoom:hover .letter5 {
+    text-shadow: 2px 2px #4EF89B;
+    opacity: 1 !important;
+    font-size: 2.5em;
+    font-weight: 600;
+    background: linear-gradient(black, #4EF89B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-butoom:hover .letter6 {
+    text-shadow: 2px 2px #24292e;
+    font-size: 2em;
+    font-weight: 600;
+    opacity: 1 !important;
+    background: linear-gradient(black, #24292e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-butoom:hover .letter7 {
+    font-size: 1.5em;
+    background: linear-gradient(black, #3b5998);
+    -webkit-background-clip: text;
+    opacity: 1 !important;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #3b5998;
+    font-weight: 600;
+}
+
+.text-butoom:hover .letter8 {
+    font-size: 1em;
+    opacity: 1 !important;
+    font-weight: 600;
+    background: linear-gradient(black, #4EF89B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #4EF89B;
+}
+
+.text-butoom:hover .letter9 {
+    font-size: 1em;
+    opacity: 1;
+    font-weight: 600;
+    background: linear-gradient(black, #24292e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #24292e;
+}
+
+
+/* media desktop */
+
+@media only screen and (max-width: 900px) {
+    /* change card size */
+    ul li {
+        width: 200px;
+        margin: 0 30px;
+    }
+    /* make new card annimation */
+    ul li:nth-child(1) span {
+        transition: all;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.4s;
+    }
+    ul li:nth-child(1):hover span {
+        transform: rotateY(360deg);
+    }
+    ul li:nth-child(2) span {
+        transition: all;
+        transition-delay: 0.1s;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.4s;
+    }
+    ul li:nth-child(2):hover span {
+        transform: rotateY(360deg);
+    }
+    ul li:nth-child(3) span {
+        transition: all;
+        transition-delay: 0.1s;
+        transition-timing-function: ease;
+        transition-duration: 0.4s;
+    }
+    ul li:nth-child(3):hover span {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* phone desktop */
+
+@media only screen and (max-width: 750px) {
+    /* make card one line */
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    /* change audio postion */
+    .audio {
+        right: -20px;
+    }
+    /* change card size */
+    ul li {
+        width: 500px;
+        height: 100px;
+        margin: 20px 0;
+    }
+    /* change icon voice size */
+    .fa-volume-up {
+        font-size: 15px;
+        right: 7px;
+    }
+    /* change size text and postion */
+    .text {
+        font-size: 26px;
+    }
+    .letter {
+        font-size: 26px;
+    }
+    .text-top {
+        top: 0;
+    }
+    .text-butoom {
+        bottom: 0;
+    }
+    .text-butoom:hover .letter2 {
+        font-size: 1.5em;
+    }
+    .text-butoom:hover .letter3 {
+        font-size: 1.5em;
+    }
+    .text-butoom:hover .letter4 {
+        font-size: 1.5em;
+    }
+    .text-butoom:hover .letter5 {
+        font-size: 1.5em;
+    }
+    .text-butoom:hover .letter6 {
+        font-size: 1.5em;
+    }
+    .text-butoom:hover .letter7 {
+        font-size: 1em;
+    }
+    .text-butoom:hover .letter8 {
+        font-size: 1em;
+    }
+    .text-butoom:hover .letter9 {
+        font-size: 1em;
+    }
+    /* make new card annimation */
+    ul li:nth-child(1):hover span {
+        transform: rotateX(360deg);
+    }
+    ul li:nth-child(2):hover span {
+        transform: rotateX(360deg);
+    }
+    ul li:nth-child(3):hover span {
+        transform: rotateX(360deg);
+    }
+}
