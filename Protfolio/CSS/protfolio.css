@@ -129,6 +129,7 @@
     transform: translateY(-50%);
     color: wheat;
     cursor: default;
+    position: relative;
 }
 
 .anim-typewriter {
@@ -322,19 +323,19 @@ section {
     outline: none;
 }
 
-.error1 {
+.eror {
     width: 65% !important;
     margin: 0 auto;
     padding: 0.3em !important;
 }
 
-.error2 {
+.eror1 {
     width: 65% !important;
     margin: 0 auto;
     padding: 0.3em !important;
 }
 
-.error3 {
+.eror2 {
     width: 65% !important;
     margin: 0 auto;
     padding: 0.3em !important;

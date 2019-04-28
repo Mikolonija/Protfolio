@@ -1,3 +1,4 @@
+//meniu efect
 $(document).ready(function() {
     $(".icon1").mouseover(function() {
         $(".icon1").text("Home");
@@ -23,7 +24,7 @@ $(".icon1").mouseout(function() {
     $(".icon1").text("");
 
 });
-
+//meniu efect
 $(document).ready(function() {
     $(".icon2").mouseover(function() {
         $(".icon2").text("About");
@@ -49,7 +50,7 @@ $(".icon2").mouseout(function() {
     $(".icon2").text("");
 
 });
-
+//meniu efect
 $(document).ready(function() {
     $(".icon3").mouseover(function() {
         $(".icon3").text("My Work");
@@ -75,7 +76,7 @@ $(".icon3").mouseout(function() {
     $(".icon3").text("");
 
 });
-
+//meniu efect
 
 $(document).ready(function() {
     $(".icon4").mouseover(function() {
@@ -102,7 +103,7 @@ $(".icon4").mouseout(function() {
     $(".icon4").text("");
 });
 
-
+//time
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -115,44 +116,46 @@ function startTime() {
 }
 
 function checkTime(i) {
-    if (i < 10) { i = "0" + i };
+    if (i < 10) {
+        i = "0" + i
+    };
     return i;
 }
-// Contact
+//Contact
 
 $(document).ready(function() {
     $("#mail_form").submit(function() {
         if ($("#a").val() == "") {
-            $(".klaida").addClass("alert alert-danger");
-            $(".klaida").text("Warning! This alert box could indicate , add NAME");
+            $(".eror").addClass("alert alert-danger");
+            $(".eror").text("Warning! This alert box could indicate , add NAME");
             return false;
         } else {
-            $(".klaida").removeClass("alert alert-danger");
-            $(".klaida").text("");
+            $(".eror").removeClass("alert alert-danger");
+            $(".eror").text("");
         }
     });
 });
 $(document).ready(function() {
     $("#mail_form").submit(function() {
         if ($("#b").val() == "") {
-            $(".klaida1").addClass("alert alert-danger");
-            $(".klaida1").text("Warning! This alert box could indicate ,add GMAIL ");
+            $(".eror1").addClass("alert alert-danger");
+            $(".eror1").text("Warning! This alert box could indicate ,add GMAIL ");
             return false;
         } else {
-            $(".klaida1").removeClass("alert alert-danger");
-            $(".klaida1").text("");
+            $(".eror1").removeClass("alert alert-danger");
+            $(".eror1").text("");
         }
     });
 });
 $(document).ready(function() {
     $("#mail_form").submit(function() {
         if ($("#c").val() == "") {
-            $(".klaida2").addClass("alert alert-danger");
-            $(".klaida2").text("Warning! This alert box could indicate ,add COMENTAR ");
+            $(".eror2").addClass("alert alert-danger");
+            $(".eror2").text("Warning! This alert box could indicate ,add COMENTAR ");
             return false;
         } else {
-            $(".klaida2").removeClass("alert alert-danger");
-            $(".klaida2").text("");
+            $(".eror2").removeClass("alert alert-danger");
+            $(".eror2").text("");
 
         }
 
